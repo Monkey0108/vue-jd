@@ -5,7 +5,7 @@
             <h3 class="cartname">商品详情</h3>
             <a href="#" class="icon_menu"></a>
         </header>
-        <main class="detail_box">
+        <main class="detail_box" v-if="goodsData.length>0">
             <section class="banner_box">
                 <ul class="banner_child_box">
                     <li class="banner_item" v-for="item in goodsImages">
@@ -39,7 +39,6 @@
                     {{goodsData[0].product_detail}}
                 </p>
            </section>
-          
         </main>
         <footer class="cart_d_footer">
             <div class="m">
